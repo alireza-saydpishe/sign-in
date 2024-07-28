@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    background-color: #01b7cf;
+}
+
+/* navigation bar */
+.navigation{
+    width: 100%;
+    height: 88px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+/* قسمت چپ نویگیشن */
+.nav-left{
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(117, 117, 159); */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+@font-face {
+    font-family: myfont1;
+    src: url(fonts/logoname/Carattere-Regular.ttf);
+}
+
+@font-face {
+    font-family: myfont2;
+    src: url(fonts/logo/DancingScript-VariableFont_wght.ttf);
+}
+.logo{
+    font-size: 100px;
+    color: #257163;
+    font-family: myfont2;
+}
+.logo-name{
+    margin-left: 35px;
+    font-family: myfont1;
+    font-size: 40px;
+}
+
+/* نویگیشن سمت راست */
+@font-face {
+    font-family: myfont3;
+    src: url(fonts/items/Lato-Black.ttf);
+}
+.nav-right{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(130, 66, 96); */
+}
+
+.list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link-item{
+    text-decoration: none;
+    color: #257163;
+    font-size: 18px;
+    font-family: myfont3;
+}
+
+.link-item:hover{
+    width: 270px;
+    height: 88px;
+    background-color: #257163;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: auto 30px;
+    text-align: center;
+    font-family: myfont3;
+    margin-right: 0;
+}
+.item{
+    margin: auto 20px;
+    margin-top: 30px;
+}
+
+/* main */
+.box-text{
+    width: 100%;
+    height: 150px;
+    /* background-color: rgb(52, 57, 62); */
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: myfont4;
+    src: url(fonts/text/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+.text-main{
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: myfont4;
+    line-height: 38px;
+    color: aliceblue;
+}
+
+
+/* center */
+.center{
+    width: 100%;
+    height: 700px;
+    /* background-color: chocolate; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-left{
+    width: 40%;
+    height: 90%;
+    /* background-color: rgb(87, 69, 57); */
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-center-left{
+    width: 160px;
+    height: 150px;
+    /* background-color: #003e4c; */
+    position: relative;
+    top: 20px;
+
+}
+.center-left-tetxt{
+    width: 600px;
+    height: 300px;
+    /* background-color: #f35446; */
+    font-family: myfont4;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    bottom: 30px;
+    right: 230px; 
+    line-height: 35px;
+
+}
+
+.profile-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.center-right{
+    margin-top: 20px;
+    width: 40%;
+    height: 90%;
+    /* background-color: rgb(34, 58, 35); */
+    border-left: 1px solid white;
+}
+
+/* form */
+
+.form{
+    margin-top: 45px;
+}
+input[type=text], select {
+    width: 100%;
+    height: 45px;
+    padding: 12px 20px;
+    margin: 15px 50px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=password], select {
+    width: 100%;
+    height: 45px;
+    padding: 20px 20px;
+    margin: 15px 50px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+.checkbox{
+    margin-top: 30px;
+    margin-left: 55px;
+}
+
+.cb{
+    position: relative;
+    display: flex;
+    bottom: 50px;
+}
+@font-face {
+    font-family: myfont5;
+    src: url(fonts/text2/Montserrat-Italic-VariableFont_wght.ttf);
+}
+.text-ceckbox{
+    margin-left: 15px;
+    margin-top: 65px;
+    font-family: myfont4;
+    color: aliceblue;
+}
+
+.signin-link{
+    text-decoration: none;
+}
+.sign-in{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #003e4c;
+    margin-left: 53px;
+    border-radius:5px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: myfont3;
+    color: white;
+    bottom: 60px;
+}
+
+.sign-in:hover{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #257163  ;
+    margin-left: 53px;
+    border-radius:5px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: myfont3;
+    color:white ;
+    bottom: 60px;
+}
+
+
+
+.box1{
+    width: 100%;
+    height: 100%;
+    margin-left: 60px;
+    position: relative;
+    bottom: 50px;
+    color: white;
+}
+
+.end{
+    width: 100%;
+    height: 120px;
+    /* background-color: bisque; */
+    margin-left: 60px;
+    border-top: 1px solid white;
+}
+
+.box2{
+    width: 250px;
+    height: 40px;
+    background-color: #01b7cf;
+    text-align: center;
+    padding-top: 11px;
+    position: relative;
+    left: 240px;
+    bottom: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+.down{
+    position: relative;
+    width: 100%;
+    height:100px;
+    /* background-color: darkred; */
+    bottom: 100px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.down-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 55px;
+}
+.linkedin{
+    width: 80%;
+    height: 30px;
+    background-color: #0480c1;
+    display: flex;
+    border-radius: 5px;
+}
+
+.linkedin-image{
+    width: 10%;
+    height: 100%;
+}
+
+.linkedin-text{
+    color: white;
+    font-family: myfont3;
+    padding-left: 100px;
+    padding-top: 5px;
+}
+
+.img-link{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5PX;
+    border-bottom-left-radius: 5PX;
+}
+.down-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(14, 64, 49); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.google{
+    width: 80%;
+    height: 30px;
+    background-color: #f35446;
+    display: flex;
+    border-radius: 5px;
+}
+.image-google{
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    border-top-left-radius: 5PX;
+    border-bottom-left-radius: 5PX;
+
+}
+.google-text{
+    color: white;
+    font-family: myfont3;
+    padding-left: 100px;
+    padding-top: 5px;
+}
+
+.img-google{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
